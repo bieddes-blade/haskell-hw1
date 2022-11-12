@@ -1,0 +1,24 @@
+cabal-version: 2.2
+
+name: homework
+version: 2021
+
+test-suite homework
+  build-depends:
+    base,
+    QuickCheck,
+    tasty,
+    tasty-hunit,
+    tasty-discover,
+    tasty-quickcheck,
+  default-extensions: EmptyDataDeriving LambdaCase TemplateHaskell
+  default-language: Haskell2010
+  main-is: Main.hs
+  other-modules:
+    Task2_WeekDays
+    Task3_Nat
+    Tasks4_5_Tree
+    Task6_Split
+    Task7_Monoid
+    Task8_Fix
+  type: exitcode-stdio-1.0
